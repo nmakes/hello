@@ -1,6 +1,10 @@
 <html>
-
 <head>
+
+<!--#####-->
+<!-- CSS -->
+<!--#####-->
+
 <style type="text/css">
 
 *{
@@ -77,6 +81,38 @@ jagtap:link{
     padding-top: 10;
 }
 
+.challa{
+    width: 40;
+    height:130;
+    margin: 50;
+    background-color: orange;
+    -webkit-transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.challa:hover{
+    width:150;
+    margin: 50;
+    background-color: lightblue;
+    -webkit-transition: width 0.3s, height 0.3s, background-color: 0.3s;
+}
+
+.jagtap_box{
+    border-bottom-color: red;
+    -webkit-transition: border-bottom-color 0.3s;
+}
+
+.jagtap_box:hover{
+    border-bottom-color: darkorange;
+    -webkit-transition: border-bottom-color 0.3s;
+}
+
+.jagtap_box:focus{
+    border-bottom-color: darkorange;
+    -webkit-transition: border-bottom-color 0.3s;
+}
+
+
+
 @font-face{
     font-family: Montserrat;
     src: url('Montserrat-Thin.ttf');
@@ -84,19 +120,46 @@ jagtap:link{
 }
 
 </style>
+
+
+<script type="text/javascript">
+    
+    function change() // no ';' here
+    {
+        var elem = document.getElementById("bilbul");
+        elem.value = "Aa rha hun! :3";
+        elem = document.getElementById("naamwaladabba");
+        elem.disabled=true;
+    }
+
+    function reset()
+    {
+        document.getElementById("naamwaladabba").disabled = false;
+    }
+
+</script>
+
 </head>
 
+<!-- 
+#########
+Main Body
+######### 
+-->
+
 <body>
+
 <center>
 
+<!-- Top page header -->
 <h1> Hello. </h1>
 
+<!-- Navbar -->
 <div class="navbar"> HOME | PROJECTS | REPO | RESUME </div>
 
+<!-- Main content box -->
 <div style="width:800; " align="center">
-
 <div style="width: 600; padding-left: 100; padding-right: 100;" align="center">
-
 
 <p>    You have reached Naveen Venkat's Github page. Currently, a high performing AI is building the site. Why not visit <a href="https://serverprocessor.wordpress.com">the wordpress site</a>.</p>
 
@@ -133,15 +196,22 @@ jagtap:link{
 <p>I&#8217;ve completed <strong><a href="http://code.org/certificates/48bfb6ed0b2211d559fab3147a8b2e7d" target="_blank">The Hour Of Code</a>. </strong><em>(Dec &#8217;14)<br />
 </em></p>
 
-
+</div>
 </div>
 
+<a style="color: black; text-decoration: none; font-size:25;">
+<div class="challa" style="text-align: center;word-wrap: break-word; text-overflow: clip;" align=left onclick="window.scrollTo(0,document.body.scrollHeight);"> iLoveYou </div>
+</a>
 
+Your name baby: <input class="jagtap_box" type="text" id="naamwaladabba" style="margin:30; border-style: none; border-bottom-style: double;" enabled>
 
-</div>
+<input type="submit" value="Let's meet tonight :3" id="bilbul" onclick="change()">
+
+<!-- ========================================================================================== -->
+<!-- =================================== Footer starts here =================================== -->
+<!-- ========================================================================================== -->
 
 <div class="footer_socal_links">
-
 
 <a href="mailto:nav.naveenvenkat@gmail.com">mail</a> |
 <a href="https://github.com/nmakes">git</a> |
@@ -150,7 +220,6 @@ jagtap:link{
 <a href="https://www.codewars.com/users/nmakes">CodeWars</a> |
 <a href="https://linkedin.com/in/serverprocessor">linkedin</a> |
 <a href="https://fb.com/serverprocessor">fb</a>
-
 
 <p> Copyright (c) 2017 Naveen Venkat | All Rights Reserved </p>
 </div>
