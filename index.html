@@ -2,178 +2,101 @@
 
 <head>
 <style type="text/css">
-	/* vietnamese */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 200;
-  src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGAIasgMoEcVHo3r268QTaWo.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+
+*{
+    padding: 0;
+    margin: 0;
 }
-/* latin-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 200;
-  src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGJCDkYQxybH_Rl7Qv7ee2N4.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+
+p{
+    margin:10;
 }
-/* latin */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 200;
-  src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCVh0V6fR69OLaFLklYbiSk.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+
+h1{
+    color: #181818;
+    font-family: sans-serif;
+    font-size: 60;
 }
-/* vietnamese */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNOAHFN6BivSraYkjhveRHY.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+
+body{
+    color: #181818;
+    font-family: monospace;
+    font-size: 100%;
+    font-stretch: 10;
+    background: #F8F8F8;
 }
-/* latin-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+
+hr{
+    margin: 10;
 }
-/* latin */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNV_2ngZ8dMf8fLgjYEouxg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGClYwVOhDRq2vbpGRTZ7bbs.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGFKFh1TDTPrUZWzVp6FtpG8.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCOFnW3Jk0f09zW_Yln67Ac.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: italic;
-  font-weight: 200;
-  src: local('Source Sans Pro ExtraLight Italic'), local('SourceSansPro-ExtraLightIt'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6Dx8cL9zsYYyxVMwatU85cQ.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: italic;
-  font-weight: 200;
-  src: local('Source Sans Pro ExtraLight Italic'), local('SourceSansPro-ExtraLightIt'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6PCsapai9JN_dpv7KtlunNg.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: italic;
-  font-weight: 200;
-  src: local('Source Sans Pro ExtraLight Italic'), local('SourceSansPro-ExtraLightIt'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6GLvoADUPo08d8_TfMCzMpg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM7YHq4FgHI02B8rPccK0FJQ.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM40tgx99jmYGv_xzYuwd1rU.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoMxgy2Fsj5sj3EzlXpqVXRKo.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: italic;
-  font-weight: 600;
-  src: local('Source Sans Pro Semibold Italic'), local('SourceSansPro-SemiboldIt'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6CzM2XYAq8cDhaXsrN8WXcA.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: italic;
-  font-weight: 600;
-  src: local('Source Sans Pro Semibold Italic'), local('SourceSansPro-SemiboldIt'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6OXKTZYPNtG1yMB_YJSqlic.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: italic;
-  font-weight: 600;
-  src: local('Source Sans Pro Semibold Italic'), local('SourceSansPro-SemiboldIt'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6GQKuzMuncr0JB710wa2dPI.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+
+.navbar{
+    padding-top: 10;
+    padding-bottom: 10;
+    background-color: #181818;
+    color: #F8F8F8;
+    font-size: 14;
+    margin-bottom: 20;
 }
 
 </style>
-
 </head>
 
 <body>
+<center>
 
 <h1> Hello. </h1>
-<br>
-You have reached Naveen Venkat's Github page. Currently it is under development. Why not visit <a href="https://serverprocessor.wordpress.com"> the wordpress site </a>.
+
+<div class="navbar"> HOME | PROJECTS | REPO </div>
+
+<div style="width:800; " align="center">
+
+<div style="width: 600; padding-left: 100; padding-right: 100;" align="center">
+
+
+<p>    You have reached Naveen Venkat's Github page. Currently, a high performing AI is building the site. Why not visit <a href="https://serverprocessor.wordpress.com">the wordpress site</a>.</p>
+
+<hr>
+    <p>Hello! About me? Well, I&#8217;m a Gamer, Programmer, Technology fascinated Computer geek, #LinuxDev, Music lover, Admirer of Science, an IIT JEE merit holder, and one among the 7.3 billion bipeds living in the universe that you &#8216;might&#8217; belong to. Born in Chennai. Lived in Delhi since then. Now in Pilani.</p>
+
+    <p>Did my schooling from <a href="http://www.mountcarmeldelhi.com">Mount Carmel School</a>, New Delhi. Pursuing Computer Science undergrad at <a href="http://www.bits-pilani.ac.in" target="_blank">BITS, Pilani</a>.</p>
+
+    <p>I love playing computer games, especially Minecraft (Maybe I&#8217;ll come up with a PC gaming page in the future).</p>
+
+    <p>I love computer programming. Worked on C/C++ for about 4 years since 2012. Currently I&#8217;m exploring Java and Python. Previously I&#8217;ve worked with Visual Basic, HTML, Flash, all to the beginner&#8217;s level, just enough to get me started with doing cool stuff. I also do graphic designing in Adobe Illustrator and have tried out Adobe After Effects and Adobe Audition as well.</p>
+
+    <p>I&#8217;ve worked with Linux distros. Ubuntu, Fedora, Linux Mint, Suse, PearOS, Elementary OS, Peppermint OS, Puppy Linux and a couple of other spins in Gnome, Unity, Cinnamon, KDE and LXDE platforms. <strong><em>#LinuxDev :3</em></strong></p>
+
+    <p>I&#8217;m also a member of the <a href="http://www.tomshardware.com/community/profile-1322420.htm">Tom&#8217;s Hardware</a> community. Do visit me there if you wanna have a tech brainstorming session over coffee.</p>
+
+    <p>Started using <a href="https://www.khanacademy.org/profile/nmakes/" target="_blank">Khan Academy</a> once again <em>(September &#8217;15).</em></p>
+
+    <p>I like to logically explain phenomena, or come up with a possible explanation to the unexplained. I don&#8217;t like to quit stuff before trying it out.</p>
+
 <hr />
-<p>Hello! About me? Well, I&#8217;m a Gamer, Programmer, Technology fascinated Computer geek, #LinuxDev, Music lover, Admirer of Science, an IIT JEE merit holder, and one among the 7.3 billion bipeds living in the universe that you &#8216;might&#8217; belong to. Born in Chennai. Lived in Delhi since then. Now in Pilani.</p>
-<p>Did my schooling from <a href="http://www.mountcarmeldelhi.com">Mount Carmel School</a>, New Delhi. Pursuing Computer Science undergrad at <a href="http://www.bits-pilani.ac.in" target="_blank">BITS, Pilani</a>.</p>
-<p>I love playing computer games, especially Minecraft (Maybe I&#8217;ll come up with a PC gaming page in the future).</p>
-<p>I love computer programming. Worked on C/C++ for about 4 years since 2012. Currently I&#8217;m exploring Java and Python. Previously I&#8217;ve worked with Visual Basic, HTML, Flash, all to the beginner&#8217;s level, just enough to get me started with doing cool stuff. I also do graphic designing in Adobe Illustrator and have tried out Adobe After Effects and Adobe Audition as well.</p>
-<p>I&#8217;ve worked with Linux distros. Ubuntu, Fedora, Linux Mint, Suse, PearOS, Elementary OS, Peppermint OS, Puppy Linux and a couple of other spins in Gnome, Unity, Cinnamon, KDE and LXDE platforms. <strong><em>#LinuxDev :3</em></strong></p>
-<p>I&#8217;m also a member of the <a href="http://www.tomshardware.com/community/profile-1322420.htm">Tom&#8217;s Hardware</a> community. Do visit me there if you wanna have a tech brainstorming session over coffee.</p>
-<p>Started using <a href="https://www.khanacademy.org/profile/nmakes/" target="_blank">Khan Academy</a> once again <em>(September &#8217;15).</em></p>
-<p>I like to logically explain phenomena, or come up with a possible explanation to the unexplained. I don&#8217;t like to quit stuff before trying it out.</p>
-<hr />
+
 <p><strong>A bit more description about me:</strong></p>
-<p>* IQ Score = 149 on <strong><a href="https://www.facebook.com/nmakes/posts/10203980244179948">Raven Online</a></strong> <em>(July &#8217;15)</em></p>
-<p>* Scored <strong><a href="http://www.humanmetrics.com/hr/jtypesresult.aspx?EI=-3&amp;SN=-69&amp;TF=-25&amp;JP=1">INFJ</a></strong> in Humanmetrics Jung Typology Test. <strong>Introvert = 3%, Intuitive = 69%, Feeling = 25%, Judging = 1%. </strong><em>(July &#8217;15)</em></p>
-<p>* IIT JEE Merit Holder (99.97936 percentile) <em>(2015)</em></p>
-<p>* I&#8217;ve completed <strong><a href="http://code.org/certificates/48bfb6ed0b2211d559fab3147a8b2e7d" target="_blank">The Hour Of Code</a>. </strong><em>(Dec &#8217;14)<br />
+
+<p>IQ Score = 149 on <strong><a href="https://www.facebook.com/nmakes/posts/10203980244179948">Raven Online</a></strong> <em>(July &#8217;15)</em></p>
+
+<p>Scored <strong><a href="http://www.humanmetrics.com/hr/jtypesresult.aspx?EI=-3&amp;SN=-69&amp;TF=-25&amp;JP=1">INFJ</a></strong> in Humanmetrics Jung Typology Test. <strong>Introvert = 3%, Intuitive = 69%, Feeling = 25%, Judging = 1%. </strong><em>(July &#8217;15)</em></p>
+
+<p>IIT JEE Merit Holder (99.97936 percentile) <em>(2015)</em></p>
+
+<p>I&#8217;ve completed <strong><a href="http://code.org/certificates/48bfb6ed0b2211d559fab3147a8b2e7d" target="_blank">The Hour Of Code</a>. </strong><em>(Dec &#8217;14)<br />
 </em></p>
+
+
 <hr />
-<h2><strong><a href="https://serverprocessor.wordpress.com/reachme/" target="_blank">Reach Me Here</a><br />
-</strong></h2>
+
+
+<h2><strong>Reach me:</strong></h2>
+<a href="mailto:nav.naveenvenkat@gmail.com"><p>nav.naveenvenkat@gmail.com</p></a>
+<a href="serverprocessor.wordpress.com"><p>Wordpress</p></a>
+
+
+</div>
+
+</center>
 </body>
 </html>
