@@ -18,6 +18,10 @@ h1{
     font-size: 60;
 }
 
+h2{
+    margin: 10;
+}
+
 body{
     color: #181818;
     font-family: monospace;
@@ -30,13 +34,53 @@ hr{
     margin: 10;
 }
 
+a{
+    color: red;
+    text-decoration: none;
+    -webkit-transition: color 1.5s, text-decoration 1s;
+}
+
+a:hover{
+    color: darkorange;
+    text-decoration: underline;
+    -webkit-transition: color 0.3s;
+    text-decoration-style: dashed;
+    text-decoration-line: underline;
+}
+
+a:active{
+    color: darkred;
+    text-decoration: underline;
+    -webkit-transition: color 0.3s;
+}
+
+jagtap:link{
+    color: pink;
+}
+
 .navbar{
     padding-top: 10;
     padding-bottom: 10;
     background-color: #181818;
-    color: #F8F8F8;
+    color: #F8F8F8; 
     font-size: 14;
     margin-bottom: 20;
+    font: "monospace";
+}
+
+.footer_socal_links{
+    background-color: #181818;
+    width: auto;
+    height:auto;
+    color: #F8F8F8;
+    padding-bottom:1;
+    padding-top: 10;
+}
+
+@font-face{
+    font-family: Montserrat;
+    src: url('Montserrat-Thin.ttf');
+    font-weight: bold;
 }
 
 </style>
@@ -47,7 +91,7 @@ hr{
 
 <h1> Hello. </h1>
 
-<div class="navbar"> HOME | PROJECTS | REPO </div>
+<div class="navbar"> HOME | PROJECTS | REPO | RESUME </div>
 
 <div style="width:800; " align="center">
 
@@ -57,6 +101,9 @@ hr{
 <p>    You have reached Naveen Venkat's Github page. Currently, a high performing AI is building the site. Why not visit <a href="https://serverprocessor.wordpress.com">the wordpress site</a>.</p>
 
 <hr>
+
+    <p><strong>-- A quick description about me -- </strong></p>
+
     <p>Hello! About me? Well, I&#8217;m a Gamer, Programmer, Technology fascinated Computer geek, #LinuxDev, Music lover, Admirer of Science, an IIT JEE merit holder, and one among the 7.3 billion bipeds living in the universe that you &#8216;might&#8217; belong to. Born in Chennai. Lived in Delhi since then. Now in Pilani.</p>
 
     <p>Did my schooling from <a href="http://www.mountcarmeldelhi.com">Mount Carmel School</a>, New Delhi. Pursuing Computer Science undergrad at <a href="http://www.bits-pilani.ac.in" target="_blank">BITS, Pilani</a>.</p>
@@ -75,7 +122,7 @@ hr{
 
 <hr />
 
-<p><strong>A bit more description about me:</strong></p>
+<p><strong>-- Some more info --</strong></p>
 
 <p>IQ Score = 149 on <strong><a href="https://www.facebook.com/nmakes/posts/10203980244179948">Raven Online</a></strong> <em>(July &#8217;15)</em></p>
 
@@ -87,16 +134,26 @@ hr{
 </em></p>
 
 
-<hr />
+</div>
 
-
-<h2><strong>Reach me:</strong></h2>
-<a href="mailto:nav.naveenvenkat@gmail.com"><p>nav.naveenvenkat@gmail.com</p></a>
-<a href="serverprocessor.wordpress.com"><p>Wordpress</p></a>
 
 
 </div>
 
+<div class="footer_socal_links">
+
+
+<a href="mailto:nav.naveenvenkat@gmail.com">mail</a> |
+<a href="https://github.com/nmakes">git</a> |
+<a href="https://stackoverflow.com/users/6352995/naveen-venkat">stackO/f</a> |
+<a href="https://www.hackerrank.com/serverprocessor">HRank</a> |
+<a href="https://www.codewars.com/users/nmakes">CodeWars</a> |
+<a href="https://linkedin.com/in/serverprocessor">linkedin</a> |
+<a href="https://fb.com/serverprocessor">fb</a>
+
+
+<p> Copyright (c) 2017 Naveen Venkat | All Rights Reserved </p>
+</div>
 </center>
 </body>
 </html>
