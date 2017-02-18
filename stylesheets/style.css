@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align: justify;
+    text-justify: inner-word;
+}
+
+h1{
+    color: #181818;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+    font-size: 100px;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Abel', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+body{
+    color: #181818;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-stretch: 10px;
+    background: #F8F8F8;
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+em{
+	color: #f8f8f8;
+	background-color: #181818;
+	font-size: 16px;
+	font-family: 'monospace';
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-style: normal;
+}
+
+a{
+    color: red;
+    text-decoration: none;
+    width: 100%;
+    -webkit-transition: color 1.5s, text-decoration 1s;
+}
+
+a:hover{
+    color: darkorange;
+    text-decoration: underline;
+    -webkit-transition: color 0.3s;
+    text-decoration-style: dashed;
+    text-decoration-line: underline;
+}
+
+a:active{
+    color: darkred;
+    text-decoration: underline;
+    -webkit-transition: color 0.3s;
+}
+
+footer{
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+jagtap:link{
+    color: pink;
+}
+
+.sitetitle{
+	padding-top: 60px;
+}
+
+.navbar{
+	position:fixed;
+	top:0px;
+	width:100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #181818;
+    color: #F8F8F8;
+    margin-bottom: 20;
+    font-family: "Quicksand", sans-serif;
+}
+
+.nav_link{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: darkorange;
+	margin-bottom: 15px;
+	font-weight: 400;
+	font-size: 25px;
+	-webkit-transition: background-color 0.2s, padding 0.2s, color 0.2s;
+}
+
+.nav_link:hover{
+	background-color: #F8F8F8;
+	color: red;
+	padding-right: 80px;
+	padding-left: 80px;
+	text-decoration: none;
+	-webkit-transition: background-color 0.2s, padding 0.2s, color 0.2s;
+
+}
+
+.nav_link:active{
+	background-color: #FFFFFF;
+	color: darkred;
+	padding-right: 60px;
+	padding-left: 60px;
+	text-decoration: none;
+	-webkit-transition: background-color 0.2s, padding 0.2s, color 0.2s;
+}
+
+.footer_bar{
+    margin-top:40px;
+    background-color: #181818;
+    width: auto;
+    height:auto;
+    color: #F8F8F8;
+    padding-bottom:1px;
+    padding-top: 10px;
+}
+
+.footer_link{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: darkorange;
+	margin-bottom: 15px;
+	-webkit-transition: background-color 0.2s, padding 0.2s, color 0.2s;
+}
+
+.footer_link:hover{
+	background-color: #F8F8F8;
+	color: red;
+	padding-right: 30px;
+	padding-left: 30px;
+	text-decoration: none;
+	-webkit-transition: background-color 0.2s, padding 0.2s, color 0.2s;
+
+}
+
+.footer_link:active{
+	background-color: #FFFFFF;
+	color: darkred;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-decoration: none;
+	-webkit-transition: background-color 0.2s, padding 0.2s, color 0.2s;
+}
+
+.challa{
+    width: 40;
+    height:130;
+    margin: 50;
+    background-color: orange;
+    -webkit-transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.challa:hover{
+    width:150;
+    margin: 50;
+    background-color: lightblue;
+    -webkit-transition: width 0.3s, height 0.3s, background-color: 0.3s;
+}
+
+.jagtap_box{
+    border-bottom-color: red;
+    -webkit-transition: border-bottom-color 0.3s;
+}
+
+.jagtap_box:hover{
+    border-bottom-color: darkorange;
+    -webkit-transition: border-bottom-color 0.3s;
+}
+
+.jagtap_box:focus{
+    border-bottom-color: darkorange;
+    -webkit-transition: border-bottom-color 0.3s;
+}
