@@ -29,20 +29,6 @@ h2{
     font-weight: 400;
 }
 
-h2:hover{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-decoration: underline;
-    text-decoration-color: red;
-    text-decoration-style: dotted;
-    text-decoration-line: thick;
-    /* font-family: 'Oswald', sans-serif; */
-    /* font-family: 'Abel', sans-serif; */
-    font-family: 'Quicksand', sans-serif;
-    font-size: 40px;
-    font-weight: 400;
-}
-
 body{
     color: #181818;
     font-family: 'Quicksand', sans-serif;
