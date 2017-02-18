@@ -29,6 +29,20 @@ h2{
     font-weight: 400;
 }
 
+h2:hover{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: dotted;
+    text-decoration-line: thick;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Abel', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
 body{
     color: #181818;
     font-family: 'Quicksand', sans-serif;
@@ -39,8 +53,12 @@ body{
 }
 
 hr{
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
+    width: 100%;
+    height: 2px;
+    border:none;
+    background-color: red;
 }
 
 em{
@@ -57,23 +75,46 @@ em{
 
 a{
     color: red;
-    text-decoration: none;
     width: 100%;
-    -webkit-transition: color 1.5s, text-decoration 1s;
+    padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-decoration: none;
+    -webkit-transition: color 0.3s, text-decoration 0.3s, background-color 0.3s;
 }
 
 a:hover{
-    color: darkorange;
-    text-decoration: underline;
-    -webkit-transition: color 0.3s;
-    text-decoration-style: dashed;
-    text-decoration-line: underline;
+    color: white;
+    background-color: #181818;
+    padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-decoration: none;
+    -webkit-transition: color 0.3s, background-color 0.3s;
 }
 
 a:active{
-    color: darkred;
-    text-decoration: underline;
+    color: red;
+    padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-decoration: none;
     -webkit-transition: color 0.3s;
+}
+
+a:focus{
+	outline: 0px;
+	color: white;
+    background-color: #181818;
+    padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-decoration: none;
+    -webkit-transition: color 0.3s, background-color 0.3s;
 }
 
 footer{
@@ -115,19 +156,34 @@ jagtap:link{
 
 .nav_link:hover{
 	background-color: #F8F8F8;
-	color: red;
+	color: red;		
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-right: 80px;
 	padding-left: 80px;
 	text-decoration: none;
 	-webkit-transition: background-color 0.2s, padding 0.2s, color 0.2s;
-
 }
 
 .nav_link:active{
 	background-color: #FFFFFF;
 	color: darkred;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	padding-right: 60px;
 	padding-left: 60px;
+	text-decoration: none;
+	-webkit-transition: background-color 0.2s, padding 0.2s, color 0.2s;
+}
+
+.nav_link:focus{
+	outline: 0px;
+	background-color: #F8F8F8;
+	color: red;		
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 80px;
+	padding-left: 80px;
 	text-decoration: none;
 	-webkit-transition: background-color 0.2s, padding 0.2s, color 0.2s;
 }
@@ -155,18 +211,33 @@ jagtap:link{
 .footer_link:hover{
 	background-color: #F8F8F8;
 	color: red;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	padding-right: 30px;
 	padding-left: 30px;
 	text-decoration: none;
 	-webkit-transition: background-color 0.2s, padding 0.2s, color 0.2s;
-
 }
 
 .footer_link:active{
 	background-color: #FFFFFF;
 	color: darkred;
+	padding-top: 3px;
+	padding-bottom: 3px;
 	padding-right: 10px;
 	padding-left: 10px;
+	text-decoration: none;
+	-webkit-transition: background-color 0.2s, padding 0.2s, color 0.2s;
+}
+
+.footer_link:focus{
+	outline: 0px;
+	background-color: #F8F8F8;
+	color: red;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 30px;
+	padding-left: 30px;
 	text-decoration: none;
 	-webkit-transition: background-color 0.2s, padding 0.2s, color 0.2s;
 }
