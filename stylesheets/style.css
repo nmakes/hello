@@ -140,7 +140,6 @@ jagtap:link{
 	color: #f8f8f8;
 	border:none;
 	margin-right: 10px;
-	padding-left: 5px;
 	border-bottom-style: solid;
 	border-bottom-color: #181818;
 	border-bottom-width: 2px;
@@ -153,7 +152,6 @@ jagtap:link{
 .nav_search_bar:hover{
 	border:none;
 	margin-right: 10px;
-	padding-left: 5px;
 	border-bottom-style: solid;
 	border-bottom-color: #181818;
 	border-bottom-width: 2px;
@@ -165,7 +163,6 @@ jagtap:link{
 .nav_search_bar:focus{
 	border:none;
 	margin-right: 10px;
-	padding-left: 5px;
 	width:200px;
 	border-bottom-style: solid;
 	border-bottom-color: orange;
