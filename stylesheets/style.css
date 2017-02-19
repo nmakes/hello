@@ -147,7 +147,7 @@ jagtap:link{
 	width: 100px;
 	opacity: 0.6;
 	height: 30px;
-	transition: width 0.2s, opacity 0.2s;
+	transition: width 0.2s, opacity 0.2s, border 0.2s;
 }
 
 .nav_search_bar:hover{
@@ -159,7 +159,7 @@ jagtap:link{
 	border-bottom-width: 2px;
 	opacity: 1;
 	height: 30px;
-	transition: width 0.2s, opacity 0.2s;
+	transition: width 0.2s, opacity 0.2s, border 0.2s;
 }
 
 .nav_search_bar:focus{
@@ -173,7 +173,7 @@ jagtap:link{
 	border-bottom-width: 2px;
 	opacity: 1;
 	height: 30px;
-	transition: width 0.2s, opacity 0.2s, border-bottom-style 0.2s;
+	transition: width 0.2s, opacity 0.2s, border-bottom-style 0.2s, border 0.2s;
 }
 
 .nav_link{
